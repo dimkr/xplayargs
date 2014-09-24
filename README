@@ -1,0 +1,32 @@
+            _
+__  ___ __ | | __ _ _   _  __ _ _ __ __ _ ___
+\ \/ / '_ \| |/ _` | | | |/ _` | '__/ _` / __|
+ >  <| |_) | | (_| | |_| | (_| | | | (_| \__ \
+/_/\_\ .__/|_|\__,_|\__, |\__,_|_|  \__, |___/
+     |_|            |___/           |___/
+
+xplayargs is a minimalistic audio player that reads the paths of audio files
+from its standard output and plays them using external players, such as:
+  - mpg123 (http://www.mpg123.de/)
+  - ogg122 (https://github.com/dimkr/ogg122)
+
+Usage Examples
+==============
+
+Play all audio files in a directory:
+  ls ~/Music | xplayargs
+
+Play all audio files in a directory, in random order:
+  ls ~/Music | sort -R | xplayargs
+
+Play all audio files in a directory, in random order with repeat:
+  while [ true ]; do ls ~/Music | sort -R | xplayargs; done
+
+Credits and Legal Information
+=============================
+
+xplayargs is free and unencumbered software released under the terms of the MIT
+license; see COPYING for the license text. For a list of its authors and
+contributors, see AUTHORS.
+
+The ASCII art logo at the top was made using FIGlet (http://www.figlet.org/).
